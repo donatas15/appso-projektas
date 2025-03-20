@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.RegisterController">
+    <children>
+        <VBox alignment="CENTER" spacing="10.0">
+            <Label text="Registracija" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+            <TextField fx:id="usernameField" promptText="Vartotojo vardas"/>
+            <PasswordField fx:id="passwordField" promptText="Slaptažodis"/>
+            <PasswordField fx:id="confirmPasswordField" promptText="Pakartokite slaptažodį"/>
+            <Button text="Registruotis" onAction="#handleRegister"/>
+            <Label fx:id="errorLabel" textFill="red"/>
+        </VBox>
+    </children>
+</AnchorPane>
